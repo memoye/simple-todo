@@ -1,0 +1,75 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #d0e5f9;
+  padding: 0 10px;
+
+  &:hover .delBtn {
+    opacity: 1;
+  }
+}
+
+.pht {
+  /* take out the placeholder task */
+  display: none;
+}
+
+.text {
+  font-size: 1.5rem;
+  flex: 1;
+  font-family: var(--written);
+  padding: 0 0.5em;
+  line-height: 1;
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 111);
+
+  &::placeholder {
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+    font-weight: 700;
+  }
+}
+
+input[type="text"] {
+  color: rgb(0, 0, 111);
+  padding: 15px;
+}
+
+.strike,
+.faded {
+  text-decoration: line-through;
+  opacity: 0.5;
+  color: rgba(0, 0, 0, 0.974);
+}
+
+.cbBox {
+  position: relative;
+}
+
+.checkbox {
+  height: 1.25rem;
+  width: 1.25rem;
+  outline: 2px solid rgb(0, 0, 0);
+
+  & * {
+    visibility: hidden;
+  }
+}
+
+.delBtn,
+.plus {
+  background: transparent;
+  border: none;
+  padding: 0.5em;
+  transition: all 0.3s;
+}
+
+.delBtn {
+  opacity: 0;
+}
+
+.plus:hover {
+  filter: drop-shadow(1px 1px 0.5px gray);
+}

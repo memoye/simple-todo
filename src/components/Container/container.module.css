@@ -1,0 +1,37 @@
+.container {
+  width: 320px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+.plus {
+  background: transparent;
+  border: none;
+  padding: 0.5em;
+  transition: all 0.3s;
+}
+.plus:hover {
+  filter: drop-shadow(1px 1px 0.5px gray);
+}
+
+.text {
+  font-size: 1.5rem;
+  flex: 1;
+  font-family: var(--written);
+  padding: 0 0.5em;
+  line-height: 1;
+  outline: none;
+  border: none;
+  color: rgb(0, 0, 111);
+
+  &::placeholder {
+    font-family: "Courier New", Courier, monospace;
+    color: black;
+    font-weight: 700;
+  }
+}
+
+input[type="text"] {
+  color: rgb(0, 0, 111);
+  padding: 15px;
+}
