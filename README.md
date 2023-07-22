@@ -1,6 +1,6 @@
 # Basic To-Do App
 
-This is a project I use to practice the concepts of <mark>components</mark>, <mark>state</mark>, <mark>props</mark> in **React**.
+This is a project I use to practice the concepts `components`,`state`, and `props` in **React**.
 
 ## Features
 
