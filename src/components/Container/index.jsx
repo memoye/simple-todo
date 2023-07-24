@@ -5,14 +5,14 @@ import { useState } from "react"
 export const Pins = () => {
     return (
         <div className='pins'>
-            <div className="pin"></div>
-            <div className="pin"></div>
-            <div className="pin"></div>
-            <div className="pin"></div>
-            <div className="pin"></div>
-            <div className="pin"></div>
-            <div className="pin"></div>
-            <div className="pin"></div>
+            <div className="pin" />
+            <div className="pin" />
+            <div className="pin" />
+            <div className="pin" />
+            <div className="pin" />
+            <div className="pin" />
+            <div className="pin" />
+            <div className="pin" />
         </div>
     )
 }
