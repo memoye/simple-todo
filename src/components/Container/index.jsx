@@ -17,35 +17,36 @@ export const Pins = () => {
     )
 }
 
-
-
-
 const Container = () => {
-    const [tasks, setTasks] = useState([
-        { id: 0, task: "--placeholderTask", isDone: false }
-    ])
+    const initialData = [
+        { id: Math.floor(Math.random() * 1000), task: "Implement Add", completed: false, isEditing: false },
+        { id: Math.floor(Math.random() * 1000), task: "Implement edit", completed: false, isEditing: false },
+        { id: Math.floor(Math.random() * 1000), task: "Implement saveEdit", completed: false, isEditing: false },
+        { id: Math.floor(Math.random() * 1000), task: "Implement delete", completed: false, isEditing: false },
+        { id: Math.floor(Math.random() * 1000), task: "Finish styling", completed: false, isEditing: false },
+        { id: Math.floor(Math.random() * 1000), task: "Push to repo!", completed: false, isEditing: false }
 
+    ]
 
-
-    const ListTasks = tasks.map((task, index) => <Item
-        key={ index }
-        { ...task }
-        setTasks={ setTasks }
-        tasks={ tasks }
-    />)
+    const [tasksList, setTasksList] = useState(initialData)
 
 
     return (
         <>
             <div className={ styles.container }>
                 {
-                    ListTasks
+                    tasksList.map((task, index) => <Item
+                        key={ task.id }
+                        { ...task }
+                        tasksList={ tasksList }
+                        setTasksList={ setTasksList }
+                    />)
                 }
             </div>
             <Item
+                tasksList={ tasksList }
+                setTasksList={ setTasksList }
                 type={ "action" }
-                tasks={ tasks }
-                setTasks={ setTasks }
             />
         </>
     )

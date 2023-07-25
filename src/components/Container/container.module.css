@@ -19,17 +19,18 @@
   }
 }
 
-.plus {
+/* .plus {
   background: transparent;
   border: none;
   padding: 0.5em;
   transition: all 0.3s;
 }
+
 .plus:hover {
   filter: drop-shadow(1px 1px 0.5px gray);
-}
+} */
 
-.text {
+/* .text {
   font-size: 1.5rem;
   flex: 1;
   font-family: var(--written);
@@ -44,9 +45,9 @@
     color: black;
     font-weight: 700;
   }
-}
-
+} */
+/* 
 input[type="text"] {
   color: rgb(0, 0, 111);
   padding: 15px;
-}
+} */

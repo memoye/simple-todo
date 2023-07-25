@@ -4,22 +4,25 @@
   align-items: center;
   border-bottom: 2px solid #d0e5f9;
   padding: 0 10px;
-
+  width: 90%;
+  margin: auto;
+  word-break: keep-all;
+  flex: 1;
   &:hover .delBtn {
     opacity: 1;
   }
 }
 
-.pht {
-  /* take out the placeholder task */
+/* .pht {
+  take out the placeholder task
   display: none;
-}
+} */
 
 .text {
   font-size: 1.5rem;
   flex: 1;
   font-family: var(--written);
-  padding: 0 0.5em;
+  padding: 0 0 0 0.5em;
   line-height: 1;
   outline: none;
   border: none;
@@ -33,8 +36,8 @@
 }
 
 input[type="text"] {
-  color: rgb(0, 0, 111);
-  padding: 15px;
+  color: #00006f;
+  margin-top: 3px;
 }
 
 .strike,
@@ -44,32 +47,53 @@ input[type="text"] {
   color: rgba(0, 0, 0, 0.974);
 }
 
-.cbBox {
-  position: relative;
-}
+.statusBox {
+  font-size: 2rem;
+  filter: sepia(100%);
+  filter: hue-rotate(215deg);
+  cursor: pointer;
 
-.checkbox {
-  height: 1.25rem;
-  width: 1.25rem;
-  outline: 2px solid rgb(0, 0, 0);
-
-  & * {
-    visibility: hidden;
+  &:hover {
+    filter: sepia(50%);
   }
 }
 
+.editBtn,
 .delBtn,
+.okBtn,
 .plus {
   background: transparent;
   border: none;
-  padding: 0.5em;
   transition: all 0.3s;
+  cursor: pointer;
+}
+
+.plus {
+  margin-left: 1.5rem;
+}
+
+.editBtn {
+  font-size: 1rem;
 }
 
 .delBtn {
   opacity: 0;
 }
 
+.okBtn {
+  opacity: 1;
+}
+
 .plus:hover {
   filter: drop-shadow(1px 1px 0.5px gray);
+}
+
+.hide {
+  display: none;
+}
+
+.red {
+  font-size: 2rem;
+  cursor: pointer;
+  filter: hue-rotate(0);
 }
