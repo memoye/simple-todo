@@ -27,6 +27,7 @@
   outline: none;
   border: none;
   color: rgb(0, 0, 111);
+  width: 80%;
 
   &::placeholder {
     font-family: "Courier New", Courier, monospace;
@@ -38,6 +39,7 @@
 input[type="text"] {
   color: #00006f;
   margin-top: 3px;
+  width: 80%;
 }
 
 .strike,
